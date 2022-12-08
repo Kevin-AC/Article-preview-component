@@ -58,7 +58,6 @@ body{
 .main-container__perfil--img{
     width: 50px;
     border-radius: 50%;
-   
 }
 .main-container__perfil--info{
     margin: 0 30px 0 20px;
@@ -80,6 +79,27 @@ body{
     display: grid;
     place-content: center;
 }
+@media(min-width:1100px){
+    .main-container{
+        width: 730px;
+        height: 280px;
+        display: flex;
+    }
+    .main-container__img{
+        height:100%;
+    }
+    .main-container__info{
+        padding: 40px 40px 0px 40px;
+    }
+    .main-container__info--title{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .main-container__perfil--info{
+        margin: 0 150px 0 20px;
+    }
+}
+
 
 
 
