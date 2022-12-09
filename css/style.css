@@ -72,7 +72,7 @@ body{
 .main-container__perfil--icon{
     background-color: var(--LightGrayishBlue); 
 }
-.main-container__perfil--icon,.main-container__share--icon{
+.main-container__perfil--icon{
     border-radius: 50%;
     width:35px;
     height: 35px;
@@ -98,11 +98,9 @@ body{
 .main-container__share--icons{
     display: flex;
     gap: 1rem;
-    margin-right: 64px;
+    margin-right: 40px;
 }
-.main-container__share--icon{
-    background-color: var(--GrayishBlue);
-}
+
 
 @media(min-width:1100px){
     .main-container{
