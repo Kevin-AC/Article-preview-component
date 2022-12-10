@@ -14,17 +14,21 @@ body{
     font-size: 13px;
     font-family: var(--fuenteP);
     background-color: var(--LightGrayishBlue);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
     
 }
+.container{
+    z-index: 1;
+    position:relative;
+}
 .main-container{
-    margin: 130px auto;
     width: 328px;
     overflow: hidden;
     border-radius: 10px;
     background-color:white;
-    margin-bottom: 30px;
-    position: relative;
-    
+    margin-bottom: 30px;    
 }
 .main-container__img{
     width: 100%;
@@ -50,7 +54,7 @@ body{
 }
 /**********************************/
 .main-container__perfil{
-    margin:20px 24px 17px 24px ;
+    margin:24px 24px 10px 24px ;
     display: flex;
     align-items: center;
 }
@@ -86,14 +90,13 @@ body{
 .main-container__share{
     position:absolute;
     background-color: var(--VeryDarkGrayishBlue);
-    top: 81%;
+    top: 81.5%;
     left: 0%;
-    width: 100%;
+    width: 328px;
     display:none;
-    height: 75px;
+    height: 70px;
     border-radius:0 0 10px 10px;
-    align-items: center;
-    margin-top: 20px;
+    align-items: center;    
 }
 .main-container__share--text{
     color: var(--LightGrayishBlue);
@@ -105,7 +108,7 @@ body{
 .main-container__share--icons{
     display: flex;
     gap: 1rem;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 .main-container__share .buttonClose{
     display: grid;
@@ -116,7 +119,6 @@ body{
         width: 730px;
         height: 280px;
         display: flex;  
-        position: unset;
     }
     .main-container__img{
         height:100%;
@@ -132,23 +134,22 @@ body{
     .main-container__perfil{
         margin:30px 0 10px 40px;
     }
-   
     .main-container__perfil--info{
         margin: 0 140px 0 20px;
     }
     /***********SHARE*********************/
     .main-container__share{
-        width:225px;
+        width:240px;
         height: 60px;
-        top:230px;
-        left:64.5%;
+        top:38%;
+        left:76%;
         display:none;
         border-radius: 10px;
+        z-index:2;
     }
     .main-container__share .buttonClose{
         display: none;
     }
-    
     .triangle {
         width: 10%;
         height: 30%;
@@ -156,7 +157,7 @@ body{
         position: absolute;
         top: 80%;
         left: 40%;
-        transform: rotateY(0deg) rotate(40deg);
+        transform: rotateY(0deg) rotate(45deg);
     }
    
 }
